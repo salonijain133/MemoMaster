@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main w-full h-screen bg-zinc-800 text-white">
+        <div id="overlay" class="hidden h-screen w-full bg-teal-500 absolute bg-zinc-800/90">
+            <div class="absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-[50%] bg-zinc-600 p-4 rounded-md">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-2xl text-zinc-400">Add New Memo++</h1>
+                    <i id="closebtn" class="ri-close-circle-fill text-zinc-400 hover:text-zinc-100"></i>
+                </div>
+                <div class="flex flex-col items-start gap-3 mt-2">
+                    <input class="title bg-zinc-800 px-2 py-2 text-xl text-zinc-400 rounded-md w-full outline-none" type="text" placeholder="Title.">
+                    <textarea class="data resize-none h-[30vh] bg-zinc-800 px-2 py-2 text-xl text-zinc-400 rounded-md w-full outline-none" placeholder="Data."></textarea>
+                    <button class="makebtn px-4 py-1 rounded-md bg-teal-600 hover:bg-teal-500 border-[1px] border-white ">Make</button>
+                </div>
+            </div>
+        </div>
+        <div class="nav w-full flex justify-between px-6 py-8 items-center">
+            <h1 class="text-xl">MemoMaster...</h1>
+            <button id="addbtn" class="bg-teal-600 px-4 py-1 rounded-lg hover:bg-teal-500 border-[1px] border-white">Add New Memo+++</button>
+        </div>
+        <div class="w-full min-h-[80vh] px-6">
+            <div class="cards flex gap-4 flex-wrap pointer-events-none">
+                
+            </div>
+            <div class="vacant w-full min-h-[80vh] flex justify-center items-center">
+                <div class="w-[12vw] h-20 border-2 border-zinc-700 border-dashed rounded-lg flex items-center justify-center">
+                    <span class="text-s text-zinc-500">No Memo Here....</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
